@@ -1,0 +1,28 @@
+@import 'buttons.css';
+@import 'navbar.css';
+@import 'main.css';
+@import 'footer.css';
+@import 'contact-us.css';
+@import 'contact-msg.css';
+@import 'finalnotes.css';
+
+@font-face {
+    font-family: 'bebas-nue';
+    src: url(../fonts/BebasNeue-Regular.ttf);
+  }
+
+@font-face {
+    font-family: 'poppins';
+    src: url(../fonts/Poppins-Regular.ttf);
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+html, body {
+    background-color: #000;
+    font-family: 'poppins';
+    scroll-behavior: smooth;
+  }

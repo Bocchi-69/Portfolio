@@ -1,0 +1,493 @@
+@font-face {
+    font-family: 'poppins';
+    src: url(../fonts/Poppins-Regular.ttf);
+  }
+
+@font-face {
+    font-family: 'poppins-semibold';
+    src: url(../fonts/Poppins-SemiBold.ttf);
+  } 
+
+section {
+    min-height: 100vh;
+    padding: 60px 0;      /* Adds space above and below each section */
+    box-sizing: border-box;
+}
+main{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+.hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    gap: 80px;
+}
+.hero-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 320px;
+    height: 320px;
+    min-width: 220px;
+    margin: 0;
+}
+.hero-image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #e0e0e0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    background: #fff;
+}
+.hero-intro{
+    max-width: 600px;
+}
+.hero-intro h1 {
+    font-family: 'poppins-semibold';
+    font-size: 4rem;      
+    margin-bottom: 10px;
+}
+.hero-intro h2 {
+    font-family: 'poppins-semibold';
+    font-size: 2rem; 
+    margin-bottom: 8px;
+}
+.hero-intro p {
+    font-family: 'poppins';
+    font-size: 1.5rem; 
+    margin-bottom: 0;
+}
+.hero-intro button {
+    background-color: #202020;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-family: 'poppins-semibold';
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.skills h2 {
+    width: 100%;
+    text-align: center;
+    font-family: 'poppins-semibold';
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.skill-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    gap: 50px;
+}
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 300px;
+    height: auto;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    gap: 20px;
+    padding: 20px;
+    position: relative;
+    background: linear-gradient(135deg, #2f2f2f 0%, #050505 100%);
+}
+.skill-card:hover {
+    transform: translateY(-8px) scale(1.03); 
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18); 
+}
+.skill-card h2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins-semibold';
+    font-size: 1.5rem;
+    margin-top: 20px;
+    padding: 10px;
+}
+.skill-card i{
+    font-size: 5rem;
+    color: #ffffff;
+    margin-top: 10px;
+}
+.skill-card img{
+    width: 5rem;
+    color: #ffffff;
+    background-color: #ffffff;
+    margin-top: 10px;
+}
+.skill-card::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #444343;             
+    border-radius: 2px;
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 20px;
+}
+.work-list {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.work-card {
+    width: 60%;
+    background: linear-gradient(135deg, #050505 0%, #464647 100%);
+    border-radius: 20px;                
+    box-shadow: 0 6px 32px rgba(0,0,0,0.18);
+    border: none;                      
+    padding: 32px 24px;                
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.work-card::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #444343;             
+    border-radius: 2px;
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.works h2 {
+    width: 100%;
+    text-align: center;
+    font-family: 'poppins-semibold';
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.work-card:hover {
+    transform: translateY(-8px) scale(1.02); 
+    box-shadow: 0 8px 32px rgba(21, 21, 21, 0.18); 
+}
+.work-card h3 {
+    font-family: 'poppins-semibold';
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-transform: uppercase;          
+}
+.work-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;           
+    margin-bottom: 10px;
+    border: 2px solid #e0e0e0;     
+    background-color: #2f2f2f;  
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    object-fit: contain;               
+}
+.work-card p {
+    font-family: 'poppins';
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    text-align: center;
+    word-spacing: 1px;
+    margin-bottom: 0;
+    line-height: 1.6;  
+}
+.work-card a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    gap: 20px;
+}
+.education-list {
+    position: relative;
+    padding-left: 48px; 
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+.education h2 {
+    width: 100%;
+    text-align: center;
+    font-family: 'poppins-semibold';
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.education h3 {
+    font-family: 'poppins-semibold';
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-transform: uppercase;          
+}
+.eduation p {
+    font-family: 'poppins';
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    text-align: left;
+    word-spacing: 1px;
+    margin-bottom: 0;
+    line-height: 1.6;  
+}
+/* Timeline Lines */
+.education-list::before {
+    content: "";
+    position: absolute;
+    left: 24px; 
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 2px;
+}
+
+.education-list .education-card {
+    position: relative;
+    padding-left: 30px;
+}
+
+.education-list .education-card::before {
+    content: "";
+    position: absolute;
+    left: -32px; 
+    top: 32px;  
+    width: 16px;
+    height: 16px;
+    background: #3f3f3f;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.education-list .education-card {
+    position: relative;
+    padding-left: 30px;
+}
+.finalnotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+.finalnotes h2 {
+    width: 100%;
+    text-align: center;
+    font-family: 'poppins-semibold';
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.finalnotes p {
+    font-family: 'poppins';
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    text-align: center;
+    word-spacing: 1px;
+    margin-bottom: 0;
+    line-height: 1.6;  
+}
+/* Default (desktop) */
+.education-list {
+    position: relative;
+    padding-left: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+.education-list::before {
+    content: "";
+    position: absolute;
+    left: 24px;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 2px;
+}
+.education-list .education-card {
+    position: relative;
+    padding-left: 30px;
+}
+.education-list .education-card::before {
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: 32px;
+    width: 16px;
+    height: 16px;
+    background: #3f3f3f;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        gap: 40px;
+        height: auto;
+        text-align: center;
+        padding: 40px 0;
+    }
+    .hero-image {
+        max-width: 220px;
+        height: 220px;
+    }
+    .hero-intro h1 {
+        font-size: 2.5rem;
+    }
+    .hero-intro h2 {
+        font-size: 1.3rem;
+    }
+    .hero-intro p {
+        font-size: 1rem;
+    }
+    .skill-list {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .work-card {
+        width: 90%;
+        max-width: 400px;
+        padding: 24px 12px;
+    }
+    .education-list {
+        gap: 80px;
+        padding-left: 28px;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 30px 4vw;
+    }
+    .hero-intro h1 {
+        font-size: 2rem;
+    }
+    .skills h2,
+    .works h2,
+    .education h2 {
+        font-size: 1.5rem;
+    }
+    .skill-card,
+    .work-card {
+        width: 100%;
+        min-width: unset;
+        max-width: 100%;
+        padding: 16px 6px;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 12px;
+        padding: 24px 8px 12px 8px;
+        align-items: center;
+    }
+    .footer-column {
+        margin: 0;
+        min-width: unset;
+        width: 100%;
+        text-align: center;
+    }
+    .education-list {
+        gap: 40px;
+        padding-left: 18px;
+    }
+    .education-list .education-card {
+        padding-left: 8px;
+    }
+    .education-list .education-card::before {
+        left: -18px;
+        top: 18px;
+        width: 12px;
+        height: 12px;
+    }
+}
+/* Tablet */
+@media (max-width: 900px) {
+    .education-list {
+        gap: 80px;
+        padding-left: 28px;
+    }
+    .education-list::before {
+        left: 12px;
+        width: 3px;
+    }
+    .education-list .education-card {
+        padding-left: 18px;
+    }
+    .education-list .education-card::before {
+        left: -18px;
+        top: 20px;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .education-list {
+        gap: 40px;
+        padding-left: 14px;
+    }
+    .education-list::before {
+        left: 6px;
+        width: 2px;
+    }
+    .education-list .education-card {
+        padding-left: 10px;
+    }
+    .education-list .education-card::before {
+        left: -10px;
+        top: 12px;
+        width: 8px;
+        height: 8px;
+    }
+}
+@media (max-width: 900px) {
+    .education-list::before {
+        display: none;
+    }
+}
